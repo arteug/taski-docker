@@ -2,7 +2,10 @@
 # Имя workflow
 name: Main Taski Workflow
 # Перечень событий-триггеров, при которых должен запускаться workflow
-on: push
+on:
+  push:
+    branches:
+      - main
 # Перечень задач
 jobs:
   # Единственная задача — склонировать код
